@@ -1,0 +1,2 @@
+# lib-git
+Git interfaces
