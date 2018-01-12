@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d6db05b555e0a351993903f4f1bf2a3a",
+    "content-hash": "2e739c95f732a1ed91c9b85687d6fe66",
     "packages": [
         {
             "name": "devboard/git-interfaces",
@@ -600,6 +600,76 @@
                 "package versions"
             ],
             "time": "2017-11-30T22:02:29+00:00"
+        },
+        {
+            "name": "leanphp/phpspec-code-coverage",
+            "version": "v4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leanphp/phpspec-code-coverage.git",
+                "reference": "668b9777ead9872a43d58bfa16a8f2feeb63294c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leanphp/phpspec-code-coverage/zipball/668b9777ead9872a43d58bfa16a8f2feeb63294c",
+                "reference": "668b9777ead9872a43d58bfa16a8f2feeb63294c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "phpspec/phpspec": "^4.0",
+                "phpunit/php-code-coverage": "~4.0||~5.0"
+            },
+            "require-dev": {
+                "bossa/phpspec2-expect": "^3.0"
+            },
+            "suggest": {
+                "ext-xdebug": "Install Xdebug to generate phpspec code coverage if you are not using phpdbg"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev",
+                    "dev-v3": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LeanPHP\\PhpSpec\\CodeCoverage\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ek9",
+                    "email": "dev@ek9.co",
+                    "homepage": "https://ek9.co"
+                },
+                {
+                    "name": "Henrik Bjornskov"
+                }
+            ],
+            "description": "Generate Code Coverage reports for PhpSpec tests",
+            "homepage": "https://github.com/leanphp/phpspec-code-coverage",
+            "keywords": [
+                "build",
+                "clover",
+                "code",
+                "code-coverage",
+                "coverage",
+                "generate",
+                "generation",
+                "phpspec",
+                "report",
+                "reports",
+                "spec",
+                "test",
+                "tests"
+            ],
+            "time": "2017-10-17T14:34:12+00:00"
         },
         {
             "name": "mockery/mockery",
