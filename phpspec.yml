@@ -1,0 +1,7 @@
+formatter.name: progress
+extensions:
+  Cjm\PhpSpec\Extension\TypeHintedMethodsExtension: ~
+suites:
+    git_suite:
+        namespace: DevboardLib\Git
+        psr4_prefix: DevboardLib\Git
