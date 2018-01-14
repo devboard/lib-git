@@ -10,3 +10,7 @@ extensions:
       html: build/phpspec
       clover: build/logs/clover.xml
       php: build/cov/coverage.cov
+suites:
+    git_suite:
+        namespace: DevboardLib\Git
+        psr4_prefix: DevboardLib\Git
