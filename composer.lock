@@ -41,16 +41,16 @@
         },
         {
             "name": "devboard/lib-generix",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devboard/lib-generix.git",
-                "reference": "8eccfa54ea6b9086e90f34f745b37c470243ae7d"
+                "reference": "c4c9491f3fa696ba73554b52ef8603cb6f5076ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devboard/lib-generix/zipball/8eccfa54ea6b9086e90f34f745b37c470243ae7d",
-                "reference": "8eccfa54ea6b9086e90f34f745b37c470243ae7d",
+                "url": "https://api.github.com/repos/devboard/lib-generix/zipball/c4c9491f3fa696ba73554b52ef8603cb6f5076ca",
+                "reference": "c4c9491f3fa696ba73554b52ef8603cb6f5076ca",
                 "shasum": ""
             },
             "require": {
@@ -82,7 +82,7 @@
                 "proprietary"
             ],
             "description": "Devboard lib with generix",
-            "time": "2018-01-12T17:02:23+00:00"
+            "time": "2018-03-19T11:16:27+00:00"
         }
     ],
     "packages-dev": [
@@ -1477,7 +1477,7 @@
                     "homepage": "http://blog.astrumfutura.com"
                 },
                 {
-                    "name": "Théo Fidry",
+                    "name": "Théo FIDRY",
                     "email": "theo.fidry@gmail.com"
                 }
             ],
@@ -1531,7 +1531,7 @@
             ],
             "authors": [
                 {
-                    "name": "Padraic Brady",
+                    "name": "Pádraic Brady",
                     "email": "padraic.brady@gmail.com",
                     "homepage": "http://blog.astrumfutura.com"
                 }
