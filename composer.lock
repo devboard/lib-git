@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "devboard/git-interfaces",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devboard/git-interfaces.git",
-                "reference": "aad6be0a8c1a4ee586398c1c34d45306c43c1e96"
+                "reference": "c50126411b25ff21f9e0e7cbd1dd344e17ee4d89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devboard/git-interfaces/zipball/aad6be0a8c1a4ee586398c1c34d45306c43c1e96",
-                "reference": "aad6be0a8c1a4ee586398c1c34d45306c43c1e96",
+                "url": "https://api.github.com/repos/devboard/git-interfaces/zipball/c50126411b25ff21f9e0e7cbd1dd344e17ee4d89",
+                "reference": "c50126411b25ff21f9e0e7cbd1dd344e17ee4d89",
                 "shasum": ""
             },
             "require": {
@@ -37,7 +37,7 @@
                 "proprietary"
             ],
             "description": "Devboard git interfaces",
-            "time": "2018-01-12T15:38:51+00:00"
+            "time": "2018-03-19T11:15:28+00:00"
         },
         {
             "name": "devboard/lib-generix",
@@ -1477,7 +1477,7 @@
                     "homepage": "http://blog.astrumfutura.com"
                 },
                 {
-                    "name": "Théo Fidry",
+                    "name": "Théo FIDRY",
                     "email": "theo.fidry@gmail.com"
                 }
             ],
@@ -1531,7 +1531,7 @@
             ],
             "authors": [
                 {
-                    "name": "Padraic Brady",
+                    "name": "Pádraic Brady",
                     "email": "padraic.brady@gmail.com",
                     "homepage": "http://blog.astrumfutura.com"
                 }
