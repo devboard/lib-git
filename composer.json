@@ -5,7 +5,7 @@
     "license": "proprietary",
     "require": {
         "php": "^7.1",
-        "devboard/git-interfaces": "^0.1.0",
+        "devboard/git-interfaces": "^1.0",
         "devboard/lib-generix": "^1.0"
     },
     "require-dev": {
