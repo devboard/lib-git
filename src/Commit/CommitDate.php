@@ -6,6 +6,7 @@ namespace DevboardLib\Git\Commit;
 
 use DateTime;
 use Git\Commit\CommitDate as CommitDateInterface;
+use RuntimeException;
 
 /**
  * @see \spec\DevboardLib\Git\Commit\CommitDateSpec
@@ -21,6 +22,10 @@ class CommitDate extends DateTime implements CommitDateInterface
     public static function createFromFormat($format, $time, $object = null): self
     {
         $date = parent::createFromFormat($format, $time, $object);
+
+        if (false === $date) {
+            throw new RuntimeException('Unparsable date/time');
+        }
 
         return new self($date->format('c'));
     }
