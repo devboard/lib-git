@@ -28,7 +28,7 @@ class CommitAuthorTest extends TestCase
     /** @var CommitAuthor */
     private $sut;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->name       = new AuthorName('Jane Johnson');
         $this->email      = new EmailAddress('jane@example.com');
@@ -36,22 +36,22 @@ class CommitAuthorTest extends TestCase
         $this->sut        = new CommitAuthor($this->name, $this->email, $this->commitDate);
     }
 
-    public function testGetName()
+    public function testGetName(): void
     {
         self::assertSame($this->name, $this->sut->getName());
     }
 
-    public function testGetEmail()
+    public function testGetEmail(): void
     {
         self::assertSame($this->email, $this->sut->getEmail());
     }
 
-    public function testGetCommitDate()
+    public function testGetCommitDate(): void
     {
         self::assertSame($this->commitDate, $this->sut->getCommitDate());
     }
 
-    public function testSerialize()
+    public function testSerialize(): void
     {
         $expected = [
             'name'       => 'Jane Johnson',
@@ -62,7 +62,7 @@ class CommitAuthorTest extends TestCase
         self::assertSame($expected, $this->sut->serialize());
     }
 
-    public function testDeserialize()
+    public function testDeserialize(): void
     {
         $serialized = json_encode($this->sut->serialize());
         self::assertEquals($this->sut, CommitAuthor::deserialize(json_decode($serialized, true)));
