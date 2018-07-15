@@ -47,6 +47,6 @@ class BranchNameTest extends TestCase
 
     public function testDeserialize()
     {
-        self::assertEquals($this->sut, $this->sut->deserialize($this->name));
+        self::assertEquals($this->sut, $this->sut::deserialize($this->name));
     }
 }

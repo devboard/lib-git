@@ -47,6 +47,6 @@ class CommitMessageTest extends TestCase
 
     public function testDeserialize()
     {
-        self::assertEquals($this->sut, $this->sut->deserialize($this->message));
+        self::assertEquals($this->sut, $this->sut::deserialize($this->message));
     }
 }
