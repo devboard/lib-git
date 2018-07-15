@@ -1,7 +1,9 @@
 parameters:
 	bootstrap: tests/bootstrap.php
 	ignoreErrors:
-	    - '#Parameter \#1 \$json of function json_decode expects string, string|false given.#'
+		- '#Parameter \#1 \$json of function json_decode expects string, string|false given.#'
+		- '#Method DevboardLib\\Git\\Commit\\CommitDate::createFromFormat\(\) has parameter .* with no typehint specified.#'
+		- '#Method DevboardLib\\Git\\Commit\\CommitDate::deserialize\(\) has parameter \$value with no typehint specified.#'
 includes:
 	- vendor/phpstan/phpstan-phpunit/extension.neon
 	- vendor/phpstan/phpstan-phpunit/rules.neon
