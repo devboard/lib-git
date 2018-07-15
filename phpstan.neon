@@ -2,10 +2,9 @@ parameters:
 	bootstrap: tests/bootstrap.php
 	ignoreErrors:
 	    - '#Parameter \#1 \$json of function json_decode expects string, string|false given.#'
-	includes:
-	    - vendor/phpstan/phpstan-phpunit/extension.neon
-	    - vendor/phpstan/phpstan-phpunit/rules.neon
-
-
+includes:
+	- vendor/phpstan/phpstan-phpunit/extension.neon
+	- vendor/phpstan/phpstan-phpunit/rules.neon
+	- vendor/phpstan/phpstan-strict-rules/rules.neon
 
 
