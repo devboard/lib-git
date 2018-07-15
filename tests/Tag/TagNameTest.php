@@ -19,33 +19,33 @@ class TagNameTest extends TestCase
     /** @var TagName */
     private $sut;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->name = '0.1';
         $this->sut  = new TagName($this->name);
     }
 
-    public function testGetName()
+    public function testGetName(): void
     {
         self::assertSame($this->name, $this->sut->getName());
     }
 
-    public function testGetValue()
+    public function testGetValue(): void
     {
         self::assertSame($this->name, $this->sut->getValue());
     }
 
-    public function testToString()
+    public function testToString(): void
     {
         self::assertSame($this->name, $this->sut->__toString());
     }
 
-    public function testSerialize()
+    public function testSerialize(): void
     {
         self::assertEquals($this->name, $this->sut->serialize());
     }
 
-    public function testDeserialize()
+    public function testDeserialize(): void
     {
         self::assertEquals($this->sut, $this->sut::deserialize($this->name));
     }

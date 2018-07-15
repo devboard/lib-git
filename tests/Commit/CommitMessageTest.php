@@ -19,33 +19,33 @@ class CommitMessageTest extends TestCase
     /** @var CommitMessage */
     private $sut;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->message = 'A commit message';
         $this->sut     = new CommitMessage($this->message);
     }
 
-    public function testGetMessage()
+    public function testGetMessage(): void
     {
         self::assertSame($this->message, $this->sut->getMessage());
     }
 
-    public function testGetValue()
+    public function testGetValue(): void
     {
         self::assertSame($this->message, $this->sut->getValue());
     }
 
-    public function testToString()
+    public function testToString(): void
     {
         self::assertSame($this->message, $this->sut->__toString());
     }
 
-    public function testSerialize()
+    public function testSerialize(): void
     {
         self::assertEquals($this->message, $this->sut->serialize());
     }
 
-    public function testDeserialize()
+    public function testDeserialize(): void
     {
         self::assertEquals($this->sut, $this->sut::deserialize($this->message));
     }
