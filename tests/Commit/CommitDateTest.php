@@ -26,13 +26,11 @@ class CommitDateTest extends TestCase
     {
         $result = $this->sut::createFromFormat(DateTime::ATOM, '2018-01-01T11:22:33Z');
         self::assertEquals('2018-01-01T11:22:33+00:00', $result->asString());
-        self::assertEquals('2018-01-01T11:22:33+00:00', $result->__toString());
     }
 
     public function testToString(): void
     {
         self::assertSame('2018-01-01T11:22:33+00:00', $this->sut->asString());
-        self::assertSame('2018-01-01T11:22:33+00:00', $this->sut->__toString());
     }
 
     public function testSerialize(): void

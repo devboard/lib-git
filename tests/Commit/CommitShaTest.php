@@ -38,7 +38,6 @@ class CommitShaTest extends TestCase
     public function testToString(): void
     {
         self::assertSame($this->sha, $this->sut->asString());
-        self::assertSame($this->sha, $this->sut->__toString());
     }
 
     public function testSerialize(): void
