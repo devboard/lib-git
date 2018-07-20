@@ -26,11 +26,13 @@ class CommitDateSpec extends ObjectBehavior
     public function it_can_be_created_from_custom_format()
     {
         $result = $this->createFromFormat(DateTime::ATOM, '2018-01-01T11:22:33Z');
+        $result->asString()->shouldReturn('2018-01-01T11:22:33+00:00');
         $result->__toString()->shouldReturn('2018-01-01T11:22:33+00:00');
     }
 
     public function it_is_castable_to_string()
     {
+        $this->asString()->shouldReturn('2018-01-01T11:22:33+00:00');
         $this->__toString()->shouldReturn('2018-01-01T11:22:33+00:00');
     }
 
