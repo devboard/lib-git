@@ -5,8 +5,8 @@
     "license": "proprietary",
     "require": {
         "php": "^7.1",
-        "devboard/git-interfaces": "^2.0@dev",
-        "devboard/lib-generix": "^2.0@dev"
+        "devboard/git-interfaces": "^2.0",
+        "devboard/lib-generix": "^2.0"
     },
     "require-dev": {
         "ciaranmcnulty/phpspec-typehintedmethods": "^3.0",
