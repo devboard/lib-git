@@ -33,6 +33,7 @@ class CommitShaSpec extends ObjectBehavior
 
     public function it_is_castable_to_string()
     {
+        $this->asString()->shouldReturn('e54c3c97b4024b4a9b270b62921c6b830d780bd3');
         $this->__toString()->shouldReturn('e54c3c97b4024b4a9b270b62921c6b830d780bd3');
     }
 

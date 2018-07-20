@@ -30,6 +30,14 @@ class CommitterName implements CommitterNameInterface
         return $this->name;
     }
 
+    public function asString(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @deprecated Lets use `asString()`
+     */
     public function __toString(): string
     {
         return $this->name;
