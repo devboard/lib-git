@@ -34,7 +34,6 @@ class CommitterNameSpec extends ObjectBehavior
     public function it_is_castable_to_string()
     {
         $this->asString()->shouldReturn('John Smith');
-        $this->__toString()->shouldReturn('John Smith');
     }
 
     public function it_can_be_serialized()
