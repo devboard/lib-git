@@ -37,6 +37,7 @@ class TagNameTest extends TestCase
 
     public function testToString(): void
     {
+        self::assertSame($this->name, $this->sut->asString());
         self::assertSame($this->name, $this->sut->__toString());
     }
 

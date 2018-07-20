@@ -30,6 +30,14 @@ class CommitMessage implements CommitMessageInterface
         return $this->message;
     }
 
+    public function asString(): string
+    {
+        return $this->message;
+    }
+
+    /**
+     * @deprecated Lets use `asString()`
+     */
     public function __toString(): string
     {
         return $this->message;

@@ -33,6 +33,7 @@ class CommitMessageSpec extends ObjectBehavior
 
     public function it_is_castable_to_string()
     {
+        $this->asString()->shouldReturn('A commit message');
         $this->__toString()->shouldReturn('A commit message');
     }
 

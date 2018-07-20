@@ -30,6 +30,14 @@ class CommitSha implements CommitShaInterface
         return $this->sha;
     }
 
+    public function asString(): string
+    {
+        return $this->sha;
+    }
+
+    /**
+     * @deprecated Lets use `asString()`
+     */
     public function __toString(): string
     {
         return $this->sha;

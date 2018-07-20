@@ -37,6 +37,7 @@ class CommitMessageTest extends TestCase
 
     public function testToString(): void
     {
+        self::assertSame($this->message, $this->sut->asString());
         self::assertSame($this->message, $this->sut->__toString());
     }
 

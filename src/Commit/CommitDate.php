@@ -14,6 +14,14 @@ use RuntimeException;
  */
 class CommitDate extends DateTime implements CommitDateInterface
 {
+    public function asString(): string
+    {
+        return $this->format('c');
+    }
+
+    /**
+     * @deprecated Lets use `asString()`
+     */
     public function __toString(): string
     {
         return $this->format('c');
@@ -32,7 +40,7 @@ class CommitDate extends DateTime implements CommitDateInterface
 
     public function serialize(): string
     {
-        return $this->__toString();
+        return $this->asString();
     }
 
     public static function deserialize($value): self
