@@ -18,10 +18,6 @@ jobs:
           command: composer install --prefer-dist --no-interaction
 
       - run:
-          name: Lint all PHP code files
-          command: git diff --name-only --diff-filter=ACMR be15ccc2dbad0e9f11c5c6d870c5f733f9a4948c | grep -E "^(spec|src|tests)\/.*php$" | xargs -n1 php -l 1> /dev/null
-
-      - run:
           name: PHPSpec
           command: ./vendor/bin/phpspec run
 
